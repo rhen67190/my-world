@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Baru: Orbitron & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RhenSpace | Explore The Cosmos</title>
+  </head>
+  <body>
+    <!-- Background Bintang (Starfield) -->
+    <div id="stars-container"></div>
+
+    <header data-aos="fade-down" data-aos-delay="200">
+      <div class="container">
+        <div class="content">
+          <div data-aos="fade-down-right" data-aos-delay="300" class="logo">
+            <img src="assets/saturn.png" alt="logo" />
+            <a href="">RHEN<span>SPACE</span></a>
+          </div>
+          <div class="extra-nav">
+            <button data-aos="fade-down" data-aos-delay="400" onclick="document.getElementById('iss-tracker').scrollIntoView({behavior: 'smooth'})">
+              Lacak ISS
+              <i data-feather="crosshair" class="icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <a href="#" class="to-top"><i data-feather="chevron-up"></i></a>
+
+    <section class="hero">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <div class="hero-badge" data-aos="zoom-in" data-aos-delay="100">Misi Eksplorasi 2026</div>
+            <h1 data-aos="fade-up" data-aos-delay="200">
+              Menyingkap Masa Depan Luar Angkasa
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="300">
+              Berpetualang ke <span>hamparan tak terbatas</span> alam semesta
+              saat kita mendorong batas penemuan, mendefinisikan ulang
+              <span>perbatasan eksplorasi luar angkasa</span> dan
+              <span>melepaskan inovasi</span> yang akan mengubah perjalanan
+              kita di antara bintang-bintang.
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+              <a href="#about" class="btn-primary">Kenali Kami</a>
+              <a href="#live-earth" class="btn-secondary">Lihat Bumi</a>
+            </div>
+          </div>
+          <div class="moon"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="live-earth" id="live-earth">
+      <div class="container">
+        <div class="content">
+          <div class="title" data-aos="fade-up">
+            <h2 class="subtitle">PEMANTAUAN BUMI</h2>
+            <h1>Citra Satelit Bumi Real-Time</h1>
+            <p>Gambar langsung dari kamera NASA DSCOVR (Satelit EPIC) yang memantau Bumi dari jarak 1,6 juta kilometer.</p>
+          </div>
+          <div class="image-container brut-card" data-aos="zoom-in" data-aos-delay="200">
+            <!-- Hiasan sudut HUD -->
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner top-right"></div>
+            <div class="hud-corner bottom-left"></div>
+            <div class="hud-corner bottom-right"></div>
+            
+            <img id="nasa-image" src="https://epic.gsfc.nasa.gov/archive/natural/2023/10/28/png/2019_10_28_01_23_52.jpg" alt="Citra Bumi dari NASA">
+            <div class="image-overlay">
+              <p id="nasa-date">Memuat data NASA...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us">
+      <div class="container">
+        <div class="content">
+          <div class="title" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="subtitle">KENAPA KAMI</h2>
+            <h1>Jelajahi Kosmos Seperti Belum Pernah Sebelumnya</h1>
+            <p>
+              RhenSpace menghubungkan Anda dengan misteri alam semesta dengan
+              teknologi mutakhir dan konten yang menarik.
+            </p>
+          </div>
+          <div class="reason">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon">🚀</div>
+              <div class="desc">
+                <h3>Pengalaman Imersif</h3>
+                <p>Menyelami keajaiban luar angkasa dengan sumber daya visual yang memukau dan interaktif.</p>
+              </div>
+              <hr />
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="600">
+              <div class="icon">🔭</div>
+              <div class="desc">
+                <h3>Wawasan Terpercaya</h3>
+                <p>Didukung oleh penelitian terbaru dan alat canggih, kami memberikan informasi yang akurat.</p>
+              </div>
+              <hr />
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="800">
+              <div class="icon">✨</div>
+              <div class="desc">
+                <h3>Luar Angkasa untuk Semua</h3>
+                <p>Platform kami dirancang untuk semua tingkatan—pemula atau ahli.</p>
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="content">
+          <div class="text-action" data-aos="fade-left" data-aos-delay="200">
+            <h2 class="subtitle">TENTANG KAMI</h2>
+            <h1>JELAJAHI RUANG ANGKASA BERSAMA KAMI</h1>
+            <p>
+              Selamat datang di RhenSpace, rumah bagi para pecinta luar angkasa. Kami berkomitmen untuk memberikan konten berkualitas yang membuka pintu keindahan alam semesta.
+            </p>
+            <a href="#live-earth">Cek Satelit Bumi <i data-feather="arrow-up-right" class="icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="status">
+      <div class="container">
+        <div class="content">
+          <div class="title" data-aos="fade-down" data-aos-delay="400">
+            <h2 class="subtitle">RUMAH KITA</h2>
+            <h1>Bumi</h1>
+            <p>Planet biru permata yang mengorbit Matahari, rumah bagi jutaan spesies.</p>
+          </div>
+          <div class="planet">
+            <div class="earth">
+              <div class="moon">
+                <div class="moon-desc">
+                  <p>Bulan</p>
+                  <hr />
+                </div>
+              </div>
+            </div>
+            <div class="desc desc-1">
+              <p class="name" data-aos="fade-right" data-aos-delay="200">Luas Permukaan</p>
+              <hr data-aos="fade-right" data-aos-delay="200" />
+              <p class="value" data-aos="fade-right" data-aos-delay="200">510,1 juta km²</p>
+            </div>
+            <div class="desc desc-2">
+              <p class="name" data-aos="fade-right" data-aos-delay="400">Suhu</p>
+              <hr data-aos="fade-right" data-aos-delay="400" />
+              <p class="value" data-aos="fade-right" data-aos-delay="400">Rata-rata 14°C</p>
+            </div>
+            <div class="desc desc-3">
+              <p class="name" data-aos="fade-right" data-aos-delay="600">Usia</p>
+              <hr data-aos="fade-right" data-aos-delay="600" />
+              <p class="value" data-aos="fade-right" data-aos-delay="600">4,54 miliar tahun</p>
+            </div>
+            <div class="desc desc-4">
+              <p class="name" data-aos="fade-left" data-aos-delay="200">Gravitasi</p>
+              <hr data-aos="fade-left" data-aos-delay="200" />
+              <p class="value" data-aos="fade-left" data-aos-delay="200">9,8 m/s²</p>
+            </div>
+            <div class="desc desc-5">
+              <p class="name" data-aos="fade-left" data-aos-delay="400">Massa</p>
+              <hr data-aos="fade-left" data-aos-delay="400" />
+              <p class="value" data-aos="fade-left" data-aos-delay="400">5,97 * 10^24 kg</p>
+            </div>
+            <div class="desc desc-6">
+              <p class="name" data-aos="fade-left" data-aos-delay="600">Kadar Oksigen</p>
+              <hr data-aos="fade-left" data-aos-delay="600" />
+              <p class="value" data-aos="fade-left" data-aos-delay="600">21%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination">
+      <div class="container">
+        <div class="content">
+          <div class="title" data-aos="fade-right" data-aos-delay="200">
+            <h1>DESTINASI POPULER</h1>
+            <p>Jelajahi satelit dan planet menarik yang sangat disukai pengguna kami untuk dikunjungi.</p>
+          </div>
+          <div class="items saturn" data-aos="fade-left" data-aos-delay="400" onclick="openModal('Saturnus', 'Planet terbesar kedua di Tata Surya, terkenal karena sistem cincin es dan debu yang sangat luas dan indah.')">
+            <a href="#">Baca Selengkapnya <i data-feather="arrow-right" size="12px" class="icon"></i></a>
+            <h1>CINCIN SATURNUS</h1>
+          </div>
+          <div class="items moon" data-aos="fade-right" data-aos-delay="200" onclick="openModal('Bulan', 'Satelit alami Bumi dan satu-satunya objek luar angkasa yang pernah dijelajahi manusia secara langsung.')">
+            <a href="#">Baca Selengkapnya <i data-feather="arrow-right" size="12px" class="icon"></i></a>
+            <h1>BULAN</h1>
+          </div>
+          <div class="items eyropa" data-aos="fade-left" data-aos-delay="400" onclick="openModal('Europa', 'Salah satu bulan Jupiter yang dipercaya memiliki lautan air asin raksasa di bawah lapisan esnya.')">
+            <a href="#">Baca Selengkapnya <i data-feather="arrow-right" size="12px" class="icon"></i></a>
+            <h1>EUROPA</h1>
+          </div>
+          <div class="items mercury" data-aos="fade-left" data-aos-delay="600" onclick="openModal('Merkurius', 'Planet terkecil dan terdekat dari Matahari. Suhunya ekstrem, sangat panas di siang hari dan sangat dingin di malam hari.')">
+            <a href="#">Baca Selengkapnya <i data-feather="arrow-right" size="12px" class="icon"></i></a>
+            <h1>MERKURIUS</h1>
+          </div>
+          <div class="items blackhole" data-aos="fade-up-right" data-aos-delay="200" onclick="openModal('Lubang Hitam', 'Wilayah ruang waktu di mana gravitasi sangat kuat sehingga tidak ada apa pun, bahkan cahaya sekalipun, yang bisa lolos.')">
+            <a href="#">Baca Selengkapnya <i data-feather="arrow-right" size="12px" class="icon"></i></a>
+            <h1>LUBANG HITAM</h1>
+          </div>
+          <div class="items titan" data-aos="fade-left" data-aos-delay="200" onclick="openModal('Titan', 'Bulan terbesar Saturnus. Satu-satunya bulan yang memiliki atmosfer tebal dan danau cairan di permukaannya.')">
+            <a href="#">Baca Selengkapnya <i data-feather="arrow-right" size="12px" class="icon"></i></a>
+            <h1>TITAN</h1>
+          </div>
+          <div class="items neptune" data-aos="fade-left" data-aos-delay="400" onclick="openModal('Neptunus', 'Planet terjauh dari Matahari. Dikenal sebagai planet dengan angin tercepat di Tata Surya, mencapai 2.100 km/jam.')">
+            <a href="#">Baca Selengkapnya <i data-feather="arrow-right" size="12px" class="icon"></i></a>
+            <h1>NEPTUNUS</h1>
+          </div>
+          <div class="items mars" data-aos="fade-left" data-aos-delay="400" onclick="openModal('Mars', 'Planet Merah, sering menjadi target eksplorasi manusia karena memiliki kemiripan dengan Bumi dan jejak air di masa lalu.')">
+            <a href="#">Baca Selengkapnya <i data-feather="arrow-right" size="12px" class="icon"></i></a>
+            <h1>MARS</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="planet-modal" class="modal">
+      <div class="modal-content brut-card">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title">Judul Planet</h2>
+        <hr style="margin: 10px 0; border: 1px solid var(--primary); opacity: 0.5;">
+        <p id="modal-desc">Deskripsi planet.</p>
+      </div>
+    </div>
+
+    <section class="iss-tracker" id="iss-tracker">
+      <div class="container">
+        <div class="content">
+          <div class="left-side" data-aos="fade-right">
+            <h2 class="subtitle">PELACAKAN REAL-TIME</h2>
+            <h1>Stasiun Luar Angkasa (ISS)</h1>
+            <p>
+              Stasiun Luar Angkasa Internasional (ISS) mengorbit Bumi setiap 90 menit dengan kecepatan 28.000 km/jam. Di mana posisinya sekarang? Cek di samping!
+            </p>
+          </div>
+          <div class="right-side" data-aos="fade-left" data-aos-delay="200">
+            <div class="iss-card brut-card">
+              <div class="iss-header">
+                <i data-feather="radio" class="pulse-icon"></i> 
+                <h2>LIVE ISS TRACKER</h2>
+              </div>
+              <div class="iss-data">
+                <div class="data-row">
+                  <span class="label">Lintang (Lat):</span>
+                  <span class="value" id="iss-lat">Memuat...</span>
+                </div>
+                <div class="data-row">
+                  <span class="label">Bujur (Lon):</span>
+                  <span class="value" id="iss-lon">Memuat...</span>
+                </div>
+                <div class="data-row">
+                  <span class="label">Kecepatan:</span>
+                  <span class="value" id="iss-speed">27.600 km/jam</span>
+                </div>
+              </div>
+              <div class="iss-actions">
+                <button onclick="fetchISS()" class="btn-refresh"><i data-feather="refresh-cw" size="14"></i> Refresh</button>
+                <a href="https://spotthestation.nasa.gov/tracking_map.cfm" target="_blank" class="btn-map">Peta NASA <i data-feather="external-link" size="14"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+          <p>&copy; 2026 RhenSpace. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true, offset: 100, duration: 800 });
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
